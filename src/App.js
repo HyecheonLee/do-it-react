@@ -1,14 +1,12 @@
 import './App.css';
 import React from "react";
-import ChildProperty from "./03/ChildProperty";
+import StateExample from "./03/StateExample";
 
 function App() {
 
   return (
       <div>
-        <ChildProperty>
-          <div><span>자식노드</span></div>
-        </ChildProperty>
+        <StateExample/>
       </div>
   );
 }
