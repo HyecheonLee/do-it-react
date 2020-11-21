@@ -1,12 +1,12 @@
 import './App.css';
 import React from "react";
-import StateExample from "./03/StateExample";
+import ForceUpdateExample from "./03/ForceUpdateExample";
 
 function App() {
 
   return (
       <div>
-        <StateExample/>
+        <ForceUpdateExample/>
       </div>
   );
 }
