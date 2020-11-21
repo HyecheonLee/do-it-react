@@ -1,13 +1,12 @@
 import './App.css';
 import React from "react";
-import BooleanComponent from "./03/BooleanComponent";
+import ChildComponent2 from "./03/ChildComponent2";
 
 function App() {
 
   return (
       <div>
-        <div><b>지루할 때:<BooleanComponent bored/></b></div>
-        <div><b>지루할 때:<BooleanComponent/></b></div>
+        <ChildComponent2 objValue={{age: 20}} requiredStringValue="문자"/>
       </div>
   );
 }
