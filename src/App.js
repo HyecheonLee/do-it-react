@@ -1,24 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import React from "react";
+import ChildComponent from "./03/ChildComponent";
 
 function App() {
+  const array = [1, 2, 3];
+  const obj = {name: "제목", age: 30};
+  const node = <h1>노드</h1>;
+  const func = () => {
+    console.log("메시지");
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <ChildComponent
+          boolValue={true}
+          numValue={1}
+          arrayValue={array}
+          objValue={obj}
+          nodeValue={node}
+          funcValue={func}
+      />
   );
 }
 
